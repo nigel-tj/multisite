@@ -1,0 +1,6 @@
+import org.nseye.multisite.UserPasswordEncoderListener
+import org.nseye.multisite.UserPasswordEncoderListener
+// Place your Spring DSL code here
+beans = {
+    userPasswordEncoderListener(UserPasswordEncoderListener)
+}
