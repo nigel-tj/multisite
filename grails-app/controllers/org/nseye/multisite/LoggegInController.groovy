@@ -1,6 +1,10 @@
 package org.nseye.multisite
 
-class LoggegInController {
+import grails.plugin.springsecurity.annotation.Secured
 
-    def index() { }
+class LoggegInController {
+  @Secured('ROLE_ADMIN')
+  def index() {
+    render 'Secure access only'
+  }
 }
